@@ -23,8 +23,9 @@ public class RandomBauble : MonoBehaviour
         GameObject temp = baubles[Random.Range(0, baubles.Length)];
         GameObject newBauble = Instantiate(temp, transform.position, Quaternion.identity);
         
-        if (baubleHolder) newBauble.transform.SetParent(transform, true);
+        if (baubleHolder) newBauble.transform.SetParent(baubleHolder.transform, true);
 
+        if (temp) Destroy(this.gameObject);
     }
 
     void FindBaubleHolder()
