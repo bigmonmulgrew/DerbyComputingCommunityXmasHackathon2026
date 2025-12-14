@@ -42,10 +42,20 @@ public class Bauble : MonoBehaviour
         mats[materialIndex] = colour;
         renderer.sharedMaterials = mats;
 
-        Debug.Log("Validated");
+    }
+    public void FetchMaterial()
+    {
+        var renderer = GetComponentInChildren<MeshRenderer>();
+        if (!renderer) return;
+
+        var mats = renderer.sharedMaterials;
+
+        if (mats.Length <= 1) return;
+        colour = mats[materialIndex];
     }
 
-   
+
+
 }
 
 
@@ -59,13 +69,27 @@ public class BaubleEditor : Editor
     {
         bauble = (Bauble)target;
 
-        // Validate when inspector appears
-        if (bauble.IsOutOfSync()) bauble.ApplyMaterial();
+        Undo.undoRedoPerformed += OnUndoRedo;
+
+        AutoSync();
+    }
+    void OnDisable()
+    {
+        Undo.undoRedoPerformed -= OnUndoRedo;
+    }
+
+    void OnUndoRedo()
+    {
+        AutoSync();
     }
 
     public override void OnInspectorGUI()
     {
+        EditorGUI.BeginChangeCheck();
+
         DrawDefaultInspector();
+
+        if (EditorGUI.EndChangeCheck())  AutoSync();
 
         if (bauble.IsOutOfSync())
         {
@@ -73,12 +97,23 @@ public class BaubleEditor : Editor
                 "Material out of sync with renderer",
                 MessageType.Warning); 
 
-            if (GUILayout.Button("Fix Now"))
+            if (GUILayout.Button("Apply Now -->"))
             {
                 bauble.ApplyMaterial();
                 EditorUtility.SetDirty(bauble);
             }
+            if (GUILayout.Button("Fetch Now <--"))
+            {
+                bauble.FetchMaterial();
+                EditorUtility.SetDirty(bauble);
+            }
         } 
+    }
+    void AutoSync()
+    {
+        if (!bauble) return;
+
+        if (bauble.IsOutOfSync()) bauble.FetchMaterial(); 
     }
 }
 #endif
