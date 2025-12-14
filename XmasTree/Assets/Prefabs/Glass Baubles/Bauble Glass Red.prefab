@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4473898421575445392, guid: d090bc44cd165044f8c10d07377b190e, type: 3}
       propertyPath: m_Name
-      value: Bauble Glass
+      value: Bauble Glass Red
       objectReference: {fileID: 0}
     - target: {fileID: 8791978646350095034, guid: d090bc44cd165044f8c10d07377b190e, type: 3}
       propertyPath: m_LocalPosition.x

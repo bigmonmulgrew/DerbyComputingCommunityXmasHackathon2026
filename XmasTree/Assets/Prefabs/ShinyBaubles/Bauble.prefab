@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   materialIndex: 0
+  insideMaterialIndex: 2
   colour: {fileID: 2100000, guid: a3a1745190b35324a8dfc8ffd112de53, type: 2}
+  insideColour: {fileID: 0}
 --- !u!1001 &2279178020614466885
 PrefabInstance:
   m_ObjectHideFlags: 0
