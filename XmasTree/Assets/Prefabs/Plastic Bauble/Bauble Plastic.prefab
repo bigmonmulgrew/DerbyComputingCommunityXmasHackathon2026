@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c60e17030e5f047afd76dc84596320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  materialIndex: 1
   colour: {fileID: 2100000, guid: b588c27b02e0b044f98b8032952af9f1, type: 2}
 --- !u!1001 &2279178020614466885
 PrefabInstance:

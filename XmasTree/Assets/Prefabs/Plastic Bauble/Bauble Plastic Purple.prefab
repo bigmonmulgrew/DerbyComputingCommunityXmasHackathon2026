@@ -11,14 +11,14 @@ PrefabInstance:
     - target: {fileID: 603713197449998785, guid: 6f6cabdeeedafdc47bfc0ecf60709933, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: d03d912b9761cc4439c09e92f6d93ff6, type: 2}
+      objectReference: {fileID: 2100000, guid: 815c27aefaa190545b446303414300aa, type: 2}
     - target: {fileID: 3839484096244025507, guid: 6f6cabdeeedafdc47bfc0ecf60709933, type: 3}
       propertyPath: colour
       value: 
-      objectReference: {fileID: 2100000, guid: d03d912b9761cc4439c09e92f6d93ff6, type: 2}
+      objectReference: {fileID: 2100000, guid: 815c27aefaa190545b446303414300aa, type: 2}
     - target: {fileID: 4473898421575445392, guid: 6f6cabdeeedafdc47bfc0ecf60709933, type: 3}
       propertyPath: m_Name
-      value: Bauble Plastic Blue
+      value: Bauble Plastic Purple
       objectReference: {fileID: 0}
     - target: {fileID: 8791978646350095034, guid: 6f6cabdeeedafdc47bfc0ecf60709933, type: 3}
       propertyPath: m_LocalPosition.x
