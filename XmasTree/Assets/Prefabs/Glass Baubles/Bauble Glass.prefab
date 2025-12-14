@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8791978646350095034}
   - component: {fileID: 3839484096244025507}
   m_Layer: 0
-  m_Name: Bauble  Glass
+  m_Name: Bauble Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50c60e17030e5f047afd76dc84596320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  materialIndex: 1
+  insideMaterialIndex: 2
+  colour: {fileID: 2100000, guid: 60749228e65636947a27ce45c08a1037, type: 2}
+  insideColour: {fileID: 2100000, guid: 60749228e65636947a27ce45c08a1037, type: 2}
 --- !u!1001 &4017825467646543558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108,7 +112,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: f114deb62cb3bdf408e284ab7996f5d3, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: 2057497953e3dfd4f9259d2246bc81fe, type: 2}
+      objectReference: {fileID: 2100000, guid: 60749228e65636947a27ce45c08a1037, type: 2}
     - target: {fileID: 919132149155446097, guid: f114deb62cb3bdf408e284ab7996f5d3, type: 3}
       propertyPath: m_Name
       value: bauble-glass

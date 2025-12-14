@@ -5,44 +5,74 @@ using UnityEditor;
 
 public class Bauble : MonoBehaviour
 {
+    [Header("Material Slots")]
     [SerializeField] int materialIndex = 1;
-    [SerializeField] Material colour;
+    [SerializeField] int insideMaterialIndex = 2;
 
+    [Header("Materials")]
+    [SerializeField] Material colour;
+    [SerializeField] Material insideColour;
+
+    // ----------------------------------------------------
+    // Sync State
+    // ----------------------------------------------------
     public bool IsOutOfSync()
     {
-        return Slot1Material != colour;
-    }  
-   
-
-    private Material Slot1Material
-    {
-        get
-        {
-            var r = GetComponentInChildren<MeshRenderer>();
-            return r && r.sharedMaterials.Length > 1
-                ? r.sharedMaterials[materialIndex]
-                : null;
-        }
+        return IsSlotOutOfSync(materialIndex, colour)
+            || IsSlotOutOfSync(insideMaterialIndex, insideColour);
     }
 
+    private bool IsSlotOutOfSync(int index, Material expected)
+    {
+        if (!expected) return false;
+
+        var r = GetComponentInChildren<MeshRenderer>();
+        if (!r) return false;
+
+        var mats = r.sharedMaterials;
+        if (index < 0 || index >= mats.Length) return false;
+
+        return mats[index] != expected;
+    }
+
+    // ----------------------------------------------------
+    // Validation
+    // ----------------------------------------------------
     private void OnValidate()
     {
         ApplyMaterial();
     }
 
+    // ----------------------------------------------------
+    // Apply -> Renderer
+    // ----------------------------------------------------
     public void ApplyMaterial()
     {
         var renderer = GetComponentInChildren<MeshRenderer>();
-        if (!renderer || !colour) return;
+        if (!renderer) return;
 
         var mats = renderer.sharedMaterials;
+        bool changed = false;
 
-        if (mats.Length <= 1) return;
+        if (colour && materialIndex >= 0 && materialIndex < mats.Length)
+        {
+            mats[materialIndex] = colour;
+            changed = true;
+        }
 
-        mats[materialIndex] = colour;
-        renderer.sharedMaterials = mats;
+        if (insideColour && insideMaterialIndex >= 0 && insideMaterialIndex < mats.Length)
+        {
+            mats[insideMaterialIndex] = insideColour;
+            changed = true;
+        }
 
+        if (changed)
+            renderer.sharedMaterials = mats;
     }
+
+    // ----------------------------------------------------
+    // Fetch <- Renderer
+    // ----------------------------------------------------
     public void FetchMaterial()
     {
         var renderer = GetComponentInChildren<MeshRenderer>();
@@ -50,14 +80,13 @@ public class Bauble : MonoBehaviour
 
         var mats = renderer.sharedMaterials;
 
-        if (mats.Length <= 1) return;
-        colour = mats[materialIndex];
+        if (materialIndex >= 0 && materialIndex < mats.Length)
+            colour = mats[materialIndex];
+
+        if (insideMaterialIndex >= 0 && insideMaterialIndex < mats.Length)
+            insideColour = mats[insideMaterialIndex];
     }
-
-
-
 }
-
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(Bauble))]
@@ -68,11 +97,10 @@ public class BaubleEditor : Editor
     void OnEnable()
     {
         bauble = (Bauble)target;
-
         Undo.undoRedoPerformed += OnUndoRedo;
-
         AutoSync();
     }
+
     void OnDisable()
     {
         Undo.undoRedoPerformed -= OnUndoRedo;
@@ -86,34 +114,34 @@ public class BaubleEditor : Editor
     public override void OnInspectorGUI()
     {
         EditorGUI.BeginChangeCheck();
-
         DrawDefaultInspector();
 
-        if (EditorGUI.EndChangeCheck())  AutoSync();
+        if (EditorGUI.EndChangeCheck()) AutoSync();
 
         if (bauble.IsOutOfSync())
         {
             EditorGUILayout.HelpBox(
-                "Material out of sync with renderer",
-                MessageType.Warning); 
+                "One or more materials are out of sync with the renderer",
+                MessageType.Warning);
 
             if (GUILayout.Button("Apply Now -->"))
             {
                 bauble.ApplyMaterial();
                 EditorUtility.SetDirty(bauble);
             }
+
             if (GUILayout.Button("Fetch Now <--"))
             {
                 bauble.FetchMaterial();
                 EditorUtility.SetDirty(bauble);
             }
-        } 
+        }
     }
+
     void AutoSync()
     {
         if (!bauble) return;
-
-        if (bauble.IsOutOfSync()) bauble.FetchMaterial(); 
+        if (bauble.IsOutOfSync())  bauble.FetchMaterial();
     }
 }
 #endif
