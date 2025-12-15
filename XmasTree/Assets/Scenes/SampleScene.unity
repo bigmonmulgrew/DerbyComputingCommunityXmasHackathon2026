@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.84549654, g: 0.9433962, b: 0.9433962, a: 1}
+  m_FogColor: {r: 0.47798735, g: 0.47798735, b: 0.47798735, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
   m_LinearFogStart: 0
@@ -34,10 +34,10 @@ RenderSettings:
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_ReflectionBounces: 2
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 203844588}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -129,6 +129,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
   m_PrefabInstance: {fileID: 1596959091}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &29091776
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3235188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7446773
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!1001 &199232018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -243,8 +300,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.6949685, g: 1, b: 0.98193693, a: 1}
-  m_Intensity: 0.001
+  m_Color: {r: 0.8050314, g: 0.8050314, b: 0.8050314, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -286,7 +343,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0.5
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -375,11 +432,182 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
   m_PrefabInstance: {fileID: 1697529927}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &229765066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.6320008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872974
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.9341488
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+--- !u!1001 &330572582
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9298384
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729753
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9563687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!4 &353993257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
   m_PrefabInstance: {fileID: 199232018}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &378872786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7971931
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.284769
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!4 &390090377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 225355cb3aafd3448b96f6613d2f0233, type: 3}
@@ -631,6 +859,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
   m_PrefabInstance: {fileID: 391654007}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &521786167
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.1558013
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729753
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21993351
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+--- !u!1001 &529856991
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4739541
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729744
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.986594
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!4 &545740405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
@@ -1329,6 +1671,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
+--- !u!1001 &764105307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.10334504
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872974
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2322044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!1001 &839943559
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1711,6 +2110,63 @@ MonoBehaviour:
   moveSpeed: 10
   lookSensitivity: 0.1
   maxPitch: 89
+--- !u!1001 &962177845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7964995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.0783498
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!1001 &1002174966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1768,6 +2224,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225355cb3aafd3448b96f6613d2f0233, type: 3}
+--- !u!1001 &1094868970
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1945305
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729744
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.8165836
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!4 &1115027145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 225355cb3aafd3448b96f6613d2f0233, type: 3}
@@ -1889,6 +2402,234 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225355cb3aafd3448b96f6613d2f0233, type: 3}
+--- !u!1001 &1283082440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1371448
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.954389
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+--- !u!1001 &1320628530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2936633
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729753
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2171826
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+--- !u!1001 &1374568081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.9785008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872974
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.117194
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+--- !u!1001 &1405353871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.077224
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872975
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8390339
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!1001 &1425464916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2177,6 +2918,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
   m_PrefabInstance: {fileID: 1706369287}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1663313797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9155741
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729753
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.4071317
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!1001 &1697529927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2469,6 +3267,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 225355cb3aafd3448b96f6613d2f0233, type: 3}
+--- !u!1001 &1819794016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5183768
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.8729753
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9288598
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!4 &1831410079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 1ae5e59aa18ca8d459f9e5bf4af7c219, type: 3}
@@ -2709,6 +3564,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2258536236120119207, guid: 225355cb3aafd3448b96f6613d2f0233, type: 3}
   m_PrefabInstance: {fileID: 839943559}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2106582034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 795079290599708053, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_Name
+      value: RandomBauble Glass TwoTone (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2275372
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.872976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.9814215
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258536236120119207, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39ed76feccaefc84099fc8e5782a586d, type: 3}
 --- !u!1 &2116198337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,3 +3810,19 @@ SceneRoots:
   - {fileID: 505702790}
   - {fileID: 257816830566711178}
   - {fileID: 1430632679}
+  - {fileID: 521786167}
+  - {fileID: 29091776}
+  - {fileID: 962177845}
+  - {fileID: 1320628530}
+  - {fileID: 1283082440}
+  - {fileID: 529856991}
+  - {fileID: 764105307}
+  - {fileID: 229765066}
+  - {fileID: 1094868970}
+  - {fileID: 330572582}
+  - {fileID: 1374568081}
+  - {fileID: 1405353871}
+  - {fileID: 1819794016}
+  - {fileID: 1663313797}
+  - {fileID: 2106582034}
+  - {fileID: 378872786}
