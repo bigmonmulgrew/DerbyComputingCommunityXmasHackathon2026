@@ -7,12 +7,15 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Frosted Glass Red
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: c242d5acf33ffdc4aaf530f334abeade, type: 2}
+  m_Name: Glass Emission Purple
+  m_Shader: {fileID: 4800000, guid: ee7e4c9a5f6364b688a332c67fc32cca, type: 3}
+  m_Parent: {fileID: 2100000, guid: 623f443c14e797b4bb6e5b2b4aa66d97, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHAPREMULTIPLY_ON
+  - _CLEARCOAT
+  - _EMISSION
+  - _RECEIVE_SHADOWS_OFF
   - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -32,11 +35,11 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _BaseColor: {r: 1, g: 0, b: 0, a: 0.7294118}
-    - _Color: {r: 1, g: 0, b: 0, a: 0.7294118}
+    - _BaseColor: {r: 0.65, g: 0, b: 0.8, a: 0.34901962}
+    - _EmissionColor: {r: 1.170189, g: 0, b: 1.7176473, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &6223690491246284856
+--- !u!114 &8691318410345242893
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

@@ -13,10 +13,7 @@ public class Bauble : MonoBehaviour
     [SerializeField] Material colour;
     [SerializeField] Material insideColour;
 
-    // ----------------------------------------------------
-    // Sync State
-    // ----------------------------------------------------
-    public bool IsOutOfSync()
+    public virtual bool IsOutOfSync()
     {
         return IsSlotOutOfSync(materialIndex, colour)
             || IsSlotOutOfSync(insideMaterialIndex, insideColour);
@@ -35,17 +32,11 @@ public class Bauble : MonoBehaviour
         return mats[index] != expected;
     }
 
-    // ----------------------------------------------------
-    // Validation
-    // ----------------------------------------------------
-    private void OnValidate()
+    protected virtual void OnValidate()
     {
         ApplyMaterial();
     }
 
-    // ----------------------------------------------------
-    // Apply -> Renderer
-    // ----------------------------------------------------
     public void ApplyMaterial()
     {
         var renderer = GetComponentInChildren<MeshRenderer>();
@@ -66,13 +57,9 @@ public class Bauble : MonoBehaviour
             changed = true;
         }
 
-        if (changed)
-            renderer.sharedMaterials = mats;
+        if (changed) renderer.sharedMaterials = mats;
     }
 
-    // ----------------------------------------------------
-    // Fetch <- Renderer
-    // ----------------------------------------------------
     public void FetchMaterial()
     {
         var renderer = GetComponentInChildren<MeshRenderer>();
