@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4473898421575445392, guid: 71553a6d4d5ed71419baf41a95edeafd, type: 3}
       propertyPath: m_Name
-      value: Bauble
+      value: Bauble Gold
       objectReference: {fileID: 0}
     - target: {fileID: 8791978646350095034, guid: 71553a6d4d5ed71419baf41a95edeafd, type: 3}
       propertyPath: m_LocalPosition.x
